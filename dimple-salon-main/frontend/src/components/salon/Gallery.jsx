@@ -11,6 +11,7 @@ const SALON_IMAGES = [
   "/assest/Nail.jpeg",
   "/assest/Nail1.jpeg",
   "/assest/image.png",
+
 ];
 
 export const Gallery = () => {
