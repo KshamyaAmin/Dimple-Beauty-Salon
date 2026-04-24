@@ -10,19 +10,19 @@ export const About = () => {
       quote: t.about.body1,
       name: "Our Story",
       designation: "Est. 2007",
-      src: "https://images.unsplash.com/photo-1646526802761-98046c6f1f53?q=80&w=1368&auto=format&fit=crop",
+      src: "/assest/abt.png",
     },
     {
       quote: t.about.body2,
       name: "Mrs. Shubha S. Shriyan",
       designation: "Founder & Visionary",
-      src: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1368&auto=format&fit=crop",
+      src: "/assest/shubha.png",
     },
     {
       quote: "From daily beauty rituals to dream bridal looks, we’re proud to be part of your special moments, transformations, and self-care journeys.",
       name: "Our Promise",
       designation: "Quality & Comfort",
-      src: "https://images.unsplash.com/photo-1524267213992-b76e8577d046?q=80&w=1368&auto=format&fit=crop",
+      src: "/assest/Makeup2.jpg",
     },
   ];
 
@@ -30,7 +30,7 @@ export const About = () => {
     <section id="about" data-testid="section-about">
       {/* Light section style from prompt */}
       <div className="bg-[color:var(--cream)] py-12 lg:py-32 px-2 md:px-10 flex flex-col gap-6 md:gap-16 items-center justify-center relative overflow-hidden">
-        
+
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-4 md:mb-6">
             <span className="block h-px w-8 md:w-12 bg-[color:var(--gold)]" />
