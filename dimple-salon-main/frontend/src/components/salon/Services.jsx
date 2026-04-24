@@ -10,7 +10,7 @@ const IMAGES = {
   waxing: "/assest/wax.jpg",
   pedicure: "/assest/pedicure.jpg",
   spa: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=70",
-  bridal: "/assest/Makeup.jpg",
+  bridal: "/assest/makeup.png",
 };
 
 export const Services = () => {
