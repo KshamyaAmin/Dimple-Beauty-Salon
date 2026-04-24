@@ -29,7 +29,7 @@ export const About = () => {
               />
             </div>
             <div className="hidden sm:flex absolute -top-6 -right-6 w-28 h-28 rounded-full bg-[color:var(--emerald)] text-[color:var(--cream)] items-center justify-center flex-col">
-              <span className="font-serif text-3xl leading-none">10+</span>
+              <span className="font-serif text-3xl leading-none">18+</span>
               <span className="overline text-[color:var(--gold)] text-[9px] mt-1">Years</span>
             </div>
           </div>

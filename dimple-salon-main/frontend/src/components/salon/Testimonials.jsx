@@ -2,6 +2,7 @@ import React from "react";
 import { Quote, Star } from "lucide-react";
 import { useT } from "../../i18n";
 import { useReveal } from "../../hooks/useReveal";
+import { CircularTestimonials } from "../ui/circular-testimonials";
 
 export const Testimonials = () => {
   const { t } = useT();
@@ -25,32 +26,24 @@ export const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {t.testimonials.items.map((it, i) => (
-            <article
-              key={i}
-              data-testid={`testimonial-card-${i}`}
-              className="relative p-7 md:p-8 border border-[color:var(--emerald-ink)]/15 bg-[color:var(--cream)] hover:border-[color:var(--gold)] transition-colors duration-500"
-            >
-              <Quote className="w-8 h-8 text-[color:var(--gold)]" strokeWidth={1.25} />
-              <p className="mt-5 font-serif italic text-xl md:text-[22px] leading-snug text-[color:var(--emerald-ink)]">
-                "{it.body}"
-              </p>
-              <div className="mt-8 pt-5 border-t border-[color:var(--hairline)]">
-                <div className="flex items-center gap-1 text-[color:var(--gold)] mb-2">
-                  {[0, 1, 2, 3, 4].map((s) => (
-                    <Star key={s} className="w-3.5 h-3.5 fill-[color:var(--gold)]" strokeWidth={1} />
-                  ))}
-                </div>
-                <div className="font-sans text-[14px] text-[color:var(--emerald-ink)] font-medium">
-                  {it.name}
-                </div>
-                <div className="font-sans text-[11px] tracking-[0.12em] uppercase text-[color:var(--ink)]/55 mt-1">
-                  {it.role}
-                </div>
-              </div>
-            </article>
-          ))}
+        <div className="mt-14">
+          <CircularTestimonials
+            testimonials={t.testimonials.items}
+            autoplay={true}
+            colors={{
+              name: "var(--emerald-ink)",
+              designation: "var(--emerald)",
+              testimony: "var(--emerald-ink)",
+              arrowBackground: "var(--emerald)",
+              arrowForeground: "var(--cream)",
+              arrowHoverBackground: "var(--gold)",
+            }}
+            fontSizes={{
+              name: "1.5rem",
+              designation: "0.875rem",
+              quote: "1.25rem",
+            }}
+          />
         </div>
       </div>
     </section>

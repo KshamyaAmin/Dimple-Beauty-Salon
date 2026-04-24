@@ -8,8 +8,9 @@ const IMAGES = {
   skin: "/assest/Vir.jpg",
   nails: "https://images.pexels.com/photos/3997385/pexels-photo-3997385.jpeg",
   waxing: "/assest/wax.jpg",
+  pedicure: "/assest/pedicure.jpg",
   spa: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=70",
-  bridal: "https://images.unsplash.com/photo-1646526803575-5c3759f2b932",
+  bridal: "/assest/Makeup2.jpg",
 };
 
 export const Services = () => {
@@ -56,7 +57,9 @@ export const Services = () => {
                       ? "md:col-span-2"
                       : i === 4
                         ? "md:col-span-2"
-                        : "md:col-span-4";
+                        : i === 5
+                          ? "md:col-span-3"
+                          : "md:col-span-3";
             return (
               <ServiceCard key={item.key} item={item} img={IMAGES[item.key]} className={span} index={i} />
             );

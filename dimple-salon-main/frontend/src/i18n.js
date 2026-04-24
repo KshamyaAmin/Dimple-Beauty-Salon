@@ -37,13 +37,13 @@ export const translations = {
     ],
     about: {
       overline: "Our Story",
-      title: "A decade of quiet confidence, one guest at a time.",
+      title: "Beauty. Elegance. Experience. Since 2007.",
       body1:
-        "Dimple Beauty Salon has been a trusted address in Sector 9, Kopar Khairane for over ten years. Our studio is intentionally ladies-only — a private space where you can truly unwind.",
+        "Welcome to Dimple Beauty Salon, a trusted name in beauty and personal care for over 18 years. Nestled in Kopar Khairane, Navi Mumbai, we’ve become a go-to destination for women seeking quality, comfort, and confidence — all under one roof. From daily beauty rituals to dream bridal looks, we’re proud to be part of your special moments, transformations, and self-care journeys.",
       body2:
-        "From the Lakmé-grade products on our shelves to the genuinely warm staff behind every chair, every detail is considered. We are proudly women-owned, LGBTQ+ friendly, and fluent in what makes each guest feel seen.",
+        "At the heart of Dimple Beauty Salon is its visionary founder, Mrs. Shubha S. Shriyan, a passionate beauty professional and entrepreneur who started the salon in 2007 with a simple mission:“To empower every woman to feel confident, cared for, and beautiful — just as she is.”With formal training in advanced beauty and makeup artistry, and over two decades of hands-on experience, Mrs. Shubha brings warmth, professionalism, and personal attention to every client interaction. Known for her calm nature, perfectionist touch, and eye for elegance, she has styled hundreds of brides, mentored young beauticians, and built a salon that feels like home for clients of all ages.",
       stats: [
-        { value: "10+", label: "Years of Trust" },
+        { value: "18+", label: "Years of Trust" },
         { value: "4.6★", label: "Google Rating" },
         { value: "258+", label: "Happy Reviews" },
         { value: "100%", label: "Ladies-Only" },
@@ -103,6 +103,12 @@ export const translations = {
           desc: "Engagement, reception and HD bridal packages. Trials on appointment.",
           tags: ["Party", "HD Bridal", "Engagement", "Pre-Bridal"],
         },
+        {
+          key: "pedicure",
+          name: "Pedicure & Foot Care",
+          desc: "Indulgent foot rituals, skin softening, and precision nail care for feet that feel light and look beautiful.",
+          tags: ["Foot Spa", "Heel Peel", "Classic Pedicure", "Gel Toes"],
+        },
       ],
     },
     gallery: {
@@ -121,18 +127,21 @@ export const translations = {
           role: "Google Review · 2 months ago",
           body:
             "I had a wonderful experience at this beauty parlour. I opted for spa, manicure, and pedicure services, and I am extremely satisfied.",
+          src: "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=1368&auto=format&fit=crop"
         },
         {
           name: "Pallavi Jogula",
           role: "Google Review · 3 months ago",
           body:
             "The experience with Dimple Parlor is awesome. The service, staff and hygiene is excellent. The rates are reasonable. I have been associated with this salon for more than 10 years.",
+          src: "https://images.unsplash.com/photo-1628749528992-f5702133b686?q=80&w=1368&auto=format&fit=crop"
         },
         {
           name: "Aisha Akanksha Shukul",
           role: "Local Guide · 25 reviews",
           body:
             "Thank you Dimple Salon team for wonderful service and hospitality — especially Akshita for the nail work. Every time, it makes people turn around and ask 'wow, where did you get that done?'",
+          src: "https://images.unsplash.com/photo-1524267213992-b76e8577d046?q=80&w=1368&auto=format&fit=crop"
         },
       ],
     },
@@ -199,13 +208,13 @@ export const translations = {
     ],
     about: {
       overline: "हमारी कहानी",
-      title: "दस वर्षों का आत्मविश्वास — एक वक़्त में एक मेहमान।",
+      title: "2007 से सुंदरता और भरोसा — एक वक़्त में एक मेहमान।",
       body1:
-        "डिम्पल ब्यूटी सालों सेक्टर 9, कोपर खैरणे का एक भरोसेमंद पता है — दस सालों से। हमारा स्टूडियो जानबूझकर सिर्फ़ महिलाओं के लिए है — एक निजी जगह जहाँ आप पूरी तरह से आराम कर सकें।",
+        "डिम्पल ब्यूटी सालों सेक्टर 9, कोपर खैरणे का एक भरोसेमंद पता है — 18 सालों से। हमारा स्टूडियो जानबूझकर सिर्फ़ महिलाओं के लिए है — एक निजी जगह जहाँ आप पूरी तरह से आराम कर सकें।",
       body2:
         "लक्मे-ग्रेड उत्पादों से लेकर गर्मजोशी भरे स्टाफ़ तक, हर बारीकी सोच-समझकर चुनी गई है। हम गर्व से महिला-स्वामित्व वाले हैं, LGBTQ+ फ्रेंडली हैं, और हर मेहमान की ख़ूबसूरती में उसकी अपनी कहानी देखते हैं।",
       stats: [
-        { value: "10+", label: "वर्षों का भरोसा" },
+        { value: "18+", label: "वर्षों का भरोसा" },
         { value: "4.6★", label: "गूगल रेटिंग" },
         { value: "258+", label: "खुश रिव्यूज़" },
         { value: "100%", label: "सिर्फ़ महिलाएँ" },
@@ -265,6 +274,12 @@ export const translations = {
           desc: "एंगेजमेंट, रिसेप्शन और HD ब्राइडल पैकेज। अपॉइंटमेंट पर ट्रायल उपलब्ध।",
           tags: ["पार्टी", "HD ब्राइडल", "एंगेजमेंट", "प्री-ब्राइडल"],
         },
+        {
+          key: "pedicure",
+          name: "पेडिक्योर और पैर की देखभाल",
+          desc: "पैरों के लिए शानदार देखभाल, त्वचा को मुलायम बनाना और नाखूनों की सटीक सफाई — ताकि आपके पैर सुंदर और हल्के महसूस हों।",
+          tags: ["फ़ुट स्पा", "हील पील", "क्लासिक पेडिक्योर", "जेल टोज़"],
+        },
       ],
     },
     gallery: {
@@ -283,18 +298,21 @@ export const translations = {
           role: "गूगल रिव्यू · 2 महीने पहले",
           body:
             "मुझे इस ब्यूटी पार्लर में बहुत अच्छा अनुभव हुआ। मैंने स्पा, मैनिक्योर और पेडिक्योर लिया — और मैं बेहद संतुष्ट हूँ।",
+          src: "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=1368&auto=format&fit=crop"
         },
         {
           name: "पल्लवी जोगुला",
           role: "गूगल रिव्यू · 3 महीने पहले",
           body:
             "डिम्पल पार्लर का अनुभव शानदार है। सेवा, स्टाफ़ और स्वच्छता — सब उत्कृष्ट। दाम भी वाजिब। मैं 10 साल से जुड़ी हूँ।",
+          src: "https://images.unsplash.com/photo-1628749528992-f5702133b686?q=80&w=1368&auto=format&fit=crop"
         },
         {
           name: "आईशा आकांक्षा शुकुल",
           role: "लोकल गाइड · 25 रिव्यूज़",
           body:
             "धन्यवाद डिम्पल सालों टीम — ख़ासकर अक्षिता को नेल वर्क के लिए। हर बार लोग पलट कर पूछते हैं — वाह, ये कहाँ से करवाया!",
+          src: "https://images.unsplash.com/photo-1524267213992-b76e8577d046?q=80&w=1368&auto=format&fit=crop"
         },
       ],
     },

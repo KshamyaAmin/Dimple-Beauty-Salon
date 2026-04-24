@@ -114,7 +114,7 @@ export const Hero = () => {
                 </div>
                 <div className="hidden sm:flex flex-col items-end text-[color:var(--cream)]">
                   <span className="overline text-[color:var(--gold)]">Since</span>
-                  <span className="font-serif text-3xl">2014</span>
+                  <span className="font-serif text-3xl">2007</span>
                 </div>
               </div>
             </div>
