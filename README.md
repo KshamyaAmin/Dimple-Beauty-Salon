@@ -92,10 +92,4 @@ cd Dimple-Beauty-Salon
 <img width="1900" height="900" alt="image" src="https://github.com/user-attachments/assets/c768f0f6-8411-4082-8112-db445909c2a4" />
 
 
-## 🔮 Future Enhancements
-
-* 📅 Online appointment booking system
-* 🧾 Admin dashboard
-* 💳 Payment integration
-* ⭐ Customer reviews section
 
