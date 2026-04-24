@@ -6,17 +6,18 @@ import React, {
   useMemo,
   useCallback,
 } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function calculateGap(width) {
+  if (width < 768) return width * 0.15; // Scaled gap for mobile
   const minWidth = 1024;
   const maxWidth = 1456;
-  const minGap = 60;
-  const maxGap = 86;
+  const minGap = 120; // Increased for PC view
+  const maxGap = 180; // Increased for PC view
   if (width <= minWidth) return minGap;
   if (width >= maxWidth)
-    return Math.max(minGap, maxGap + 0.06018 * (width - maxWidth));
+    return Math.max(minGap, maxGap + 0.1 * (width - maxWidth));
   return minGap + (maxGap - minGap) * ((width - minWidth) / (maxWidth - minWidth));
 }
 
@@ -25,6 +26,9 @@ export const CircularTestimonials = ({
   autoplay = true,
   colors = {},
   fontSizes = {},
+  imageHeightClass = "h-[14rem] sm:h-[20rem] md:h-[24rem]",
+  containerMaxWidthClass = "max-w-4xl",
+  textMaxHeightClass = "max-h-[10rem] md:max-h-none",
 }) => {
   // Color & font config
   const colorName = colors.name ?? "#000";
@@ -150,10 +154,10 @@ export const CircularTestimonials = ({
   };
 
   return (
-    <div className="testimonial-container" style={{ width: '100%', maxWidth: '56rem', padding: '2rem' }}>
-      <div className="testimonial-grid md:grid md:grid-cols-2 md:gap-20 gap-10">
+    <div className={`testimonial-container w-full p-0 md:p-8 mx-auto ${containerMaxWidthClass}`}>
+      <div className="testimonial-grid grid grid-cols-[1fr_1.5fr] md:grid-cols-2 gap-8 md:gap-16 lg:gap-32 xl:gap-40">
         {/* Images */}
-        <div className="image-container relative w-full h-[24rem]" style={{ perspective: '1000px' }} ref={imageContainerRef}>
+        <div className={`image-container relative w-full ${imageHeightClass}`} style={{ perspective: '1000px' }} ref={imageContainerRef}>
           {testimonials.map((testimonial, index) => (
             <img
               key={testimonial.src || index}
@@ -166,7 +170,7 @@ export const CircularTestimonials = ({
           ))}
         </div>
         {/* Content */}
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between h-full w-full py-1 md:py-4">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
@@ -183,42 +187,44 @@ export const CircularTestimonials = ({
                 {activeTestimonial.name}
               </h3>
               <p
-                className="mb-8"
+                className="mb-2 md:mb-8"
                 style={{ color: colorDesignation, fontSize: fontSizeDesignation }}
               >
                 {activeTestimonial.role || activeTestimonial.designation}
               </p>
-              <motion.p
-                className="leading-relaxed"
+              <motion.div
+                className={`leading-relaxed text-justify overflow-y-auto md:pr-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${textMaxHeightClass}`}
                 style={{ color: colorTestimony, fontSize: fontSizeQuote }}
               >
-                {activeTestimonial.body?.split(" ").map((word, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.22,
-                      ease: "easeInOut",
-                      delay: 0.025 * i,
-                    }}
-                    style={{ display: "inline-block" }}
-                  >
-                    {word}&nbsp;
-                  </motion.span>
+                {(activeTestimonial.quote || activeTestimonial.body)?.split(" ").map((word, i) => (
+                  <React.Fragment key={i}>
+                    <motion.span
+                      initial={{
+                        filter: "blur(10px)",
+                        opacity: 0,
+                        y: 5,
+                      }}
+                      animate={{
+                        filter: "blur(0px)",
+                        opacity: 1,
+                        y: 0,
+                      }}
+                      transition={{
+                        duration: 0.22,
+                        ease: "easeInOut",
+                        delay: 0.025 * i,
+                      }}
+                      style={{ display: "inline-block" }}
+                    >
+                      {word}
+                    </motion.span>
+                    {" "}
+                  </React.Fragment>
                 ))}
-              </motion.p>
+              </motion.div>
             </motion.div>
           </AnimatePresence>
-          <div className="flex gap-6 pt-12 md:pt-0">
+          <div className="flex gap-3 md:gap-6 pt-2 md:pt-0 mt-auto items-center">
             <button
               className="w-11 h-11 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300 border-none"
               onClick={handlePrev}
@@ -229,7 +235,7 @@ export const CircularTestimonials = ({
               onMouseLeave={() => setHoverPrev(false)}
               aria-label="Previous testimonial"
             >
-              <FaArrowLeft size={16} color={colorArrowFg} />
+              <ArrowLeft size={16} color={colorArrowFg} />
             </button>
             <button
               className="w-11 h-11 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300 border-none"
@@ -241,7 +247,7 @@ export const CircularTestimonials = ({
               onMouseLeave={() => setHoverNext(false)}
               aria-label="Next testimonial"
             >
-              <FaArrowRight size={16} color={colorArrowFg} />
+              <ArrowRight size={16} color={colorArrowFg} />
             </button>
           </div>
         </div>
