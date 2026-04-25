@@ -200,19 +200,17 @@ export const CircularTestimonials = ({
                   <React.Fragment key={i}>
                     <motion.span
                       initial={{
-                        filter: "blur(10px)",
                         opacity: 0,
                         y: 5,
                       }}
                       animate={{
-                        filter: "blur(0px)",
                         opacity: 1,
                         y: 0,
                       }}
                       transition={{
                         duration: 0.22,
                         ease: "easeInOut",
-                        delay: 0.025 * i,
+                        delay: 0.015 * i,
                       }}
                       style={{ display: "inline-block" }}
                     >
