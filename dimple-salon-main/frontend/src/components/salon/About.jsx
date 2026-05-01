@@ -8,20 +8,20 @@ export const About = () => {
   const aboutItems = [
     {
       quote: t.about.body1,
-      name: "Our Story",
-      designation: "Est. 2007",
+      name: t.about.storyTitle,
+      designation: t.about.storySubtitle,
       src: "/assest/abt.png",
     },
     {
       quote: t.about.body2,
-      name: "Mrs. Shubha S. Shriyan",
-      designation: "Founder & Visionary",
+      name: t.about.founderName,
+      designation: t.about.founderRole,
       src: "/assest/shubha.png",
     },
     {
-      quote: "From daily beauty rituals to dream bridal looks, we’re proud to be part of your special moments, transformations, and self-care journeys.",
-      name: "Our Promise",
-      designation: "Quality & Comfort",
+      quote: t.about.promiseBody,
+      name: t.about.promiseTitle,
+      designation: t.about.promiseSubtitle,
       src: "/assest/Makeup2.jpg",
     },
   ];

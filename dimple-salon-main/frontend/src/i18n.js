@@ -39,9 +39,17 @@ export const translations = {
       overline: "Our Story",
       title: "Beauty. Elegance. Experience. Since 2007.",
       body1:
-        "Welcome to Dimple Beauty Salon, a trusted name in beauty and personal care for over 18 years. Nestled in Kopar Khairane, Navi Mumbai, we’ve become a go-to destination for women seeking quality, comfort, and confidence — all under one roof. From daily beauty rituals to dream bridal looks, we’re proud to be part of your special moments, transformations, and self-care journeys.",
+        "Welcome to Dimple Beauty Salon, a trusted name in beauty and personal care for over 18 years. Nestled in Kopar Khairane, Navi Mumbai, we’ve become a go-to destination for women seeking quality, comfort, and confidence — all under one roof.",
       body2:
-        "At the heart of Dimple Beauty Salon is its visionary founder, Mrs. Shubha S. Shriyan, a passionate beauty professional and entrepreneur who started the salon in 2007 with a simple mission:“To empower every woman to feel confident, cared for, and beautiful — just as she is.”With formal training in advanced beauty and makeup artistry, and over two decades of hands-on experience, Mrs. Shubha brings warmth, professionalism, and personal attention to every client interaction. Known for her calm nature, perfectionist touch, and eye for elegance, she has styled hundreds of brides, mentored young beauticians, and built a salon that feels like home for clients of all ages.",
+        "At the heart of Dimple Beauty Salon is its visionary founder, Mrs. Shubha S. Shriyan, a passionate beauty professional and entrepreneur who started the salon in 2007 with a simple mission:“To empower every woman to feel confident, cared for, and beautiful — just as she is.”",
+      storyTitle: "Our Story",
+      storySubtitle: "Est. 2007",
+      founderName: "Mrs. Shubha S. Shriyan",
+      founderRole: "Founder & Visionary",
+      promiseTitle: "Our Promise",
+      promiseSubtitle: "Quality & Comfort",
+      promiseBody:
+        "From daily beauty rituals to dream bridal looks, we’re proud to be part of your special moments, transformations, and self-care journeys.",
       stats: [
         { value: "18+", label: "Years of Trust" },
         { value: "4.6★", label: "Google Rating" },
@@ -213,6 +221,14 @@ export const translations = {
         "डिम्पल ब्यूटी सालों सेक्टर 9, कोपर खैरणे का एक भरोसेमंद पता है — 18 सालों से। हमारा स्टूडियो जानबूझकर सिर्फ़ महिलाओं के लिए है — एक निजी जगह जहाँ आप पूरी तरह से आराम कर सकें।",
       body2:
         "लक्मे-ग्रेड उत्पादों से लेकर गर्मजोशी भरे स्टाफ़ तक, हर बारीकी सोच-समझकर चुनी गई है। हम गर्व से महिला-स्वामित्व वाले हैं, LGBTQ+ फ्रेंडली हैं, और हर मेहमान की ख़ूबसूरती में उसकी अपनी कहानी देखते हैं।",
+      storyTitle: "हमारी कहानी",
+      storySubtitle: "स्थापना 2007",
+      founderName: "श्रीमती शुभा एस. श्रियान",
+      founderRole: "संस्थापक और विजनरी",
+      promiseTitle: "हमारा वादा",
+      promiseSubtitle: "गुणवत्ता और आराम",
+      promiseBody:
+        "दैनिक सौंदर्य अनुष्ठानों से लेकर सपनों के ब्राइडल लुक्स तक, हमें आपके विशेष क्षणों, बदलावों और आत्म-देखभाल की यात्राओं का हिस्सा बनने पर गर्व है।",
       stats: [
         { value: "18+", label: "वर्षों का भरोसा" },
         { value: "4.6★", label: "गूगल रेटिंग" },
