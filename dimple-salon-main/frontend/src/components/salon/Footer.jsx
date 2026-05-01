@@ -43,7 +43,7 @@ export const Footer = () => {
                 {t.contact.phone}
               </a>
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/dimplesspa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==s"
                 target="_blank"
                 rel="noreferrer"
                 data-testid="footer-instagram"
